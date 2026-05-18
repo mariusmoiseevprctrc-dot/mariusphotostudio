@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Architect Dashboard</title>
+
+    <link rel="stylesheet" href="css/system-control.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <h1>Architect Dashboard</h1>
+
+    <button id="themeToggle">
+        Toggle Theme
+    </button>
+
+</header>
+
+<section class="neural-section">
+
+    <div class="neural-glass" id="glass">
+
+        <div class="orbital-ring"></div>
+
+        <div class="orbital-ring orbital-ring--two"></div>
+
+        <div class="core">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services-grid">
+
+    <div class="service-card" style="--i:1">
+        <h3>Rendering Engine</h3>
+        <p>GPU Active</p>
+    </div>
+
+    <div class="service-card" style="--i:2">
+        <h3>Cloud Network</h3>
+        <p>Connected</p>
+    </div>
+
+    <div class="service-card" style="--i:3">
+        <h3>Security Shield</h3>
+        <p>Protected</p>
+    </div>
+
+    <div class="service-card" style="--i:4">
+        <h3>AI Tracking</h3>
+        <p>Online</p>
+    </div>
+
+    <div class="service-card" style="--i:5">
+        <h3>Quantum Sync</h3>
+        <p>Stable</p>
+    </div>
+
+    <div class="service-card" style="--i:6">
+        <h3>Database Core</h3>
+        <p>Operational</p>
+    </div>
+
+</section>
+
+<section class="access">
+
+    <form class="access-form">
+
+        <h2 class="access-form__title">
+            Secure Access
+        </h2>
+
+        <div class="access-form__group">
+
+            <input
+                type="email"
+                required
+                placeholder=" "
+                class="access-form__input"
+            >
+
+            <label class="access-form__label">
+                Email
+            </label>
+
+        </div>
+
+        <div class="access-form__group">
+
+            <input
+                type="password"
+                required
+                minlength="6"
+                placeholder=" "
+                class="access-form__input"
+            >
+
+            <label class="access-form__label">
+                Password
+            </label>
+
+        </div>
+
+        <button class="access-form__button">
+            Validate Access
+        </button>
+
+    </form>
+
+</section>
+
+<script src="img/js/system-control.js"></script>
+
+</body>
+</html>

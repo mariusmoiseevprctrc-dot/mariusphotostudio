@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://trusted.com;">
+
+    <title>Test Formular</title>
+
+    <style>
+        :root {
+            --form-bg: #dfefff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: var(--form-bg);
+            padding: 25px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Formular Înregistrare</h2>
+
+    <label for="username">Username</label>
+    <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        maxlength="20"
+        pattern="[a-z0-9]{5,}"
+        title="Minim 5 caractere, doar litere mici și cifre">
+
+    <label for="password">Parolă</label>
+    <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        maxlength="30"
+        pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+        title="Minim 8 caractere, o literă mare, un număr și un simbol">
+
+    <label for="date">Data Rezervării</label>
+    <input
+        type="date"
+        id="date"
+        name="date"
+        min="2026-05-01"
+        max="2026-05-31"
+        required>
+
+    <label for="themeColor">Culoare Temă</label>
+    <input
+        type="color"
+        id="themeColor"
+        value="#dfefff">
+
+    <button type="submit">Trimite</button>
+</form>
+
+<script>
+    const colorPicker = document.getElementById("themeColor");
+
+    colorPicker.addEventListener("input", function () {
+        document.documentElement.style.setProperty(
+            "--form-bg",
+            colorPicker.value
+        );
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marius Moiseev Photography</title>
+
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Live Deployment & Security Headers Configured by: Moiseev Marius | Clasa RC-251 | Data: 15.05.2026 -->
+</head>
+
+<body>
+
+<!-- Accessibility Audit: WAI-ARIA implementation by Marius Moiseev -->
+
+<header>
+  <div class="container">
+
+    <h1>Marius Moiseev Photography</h1>
+
+    <nav role="navigation" aria-label="Navigație principală">
+      <ul>
+        <li><a href="#">Acasă</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <img
+      src="assets/img/js/logo.png"
+      alt=""
+      aria-hidden="true"
+      class="logo">
+
+  </div>
+</header>
+
+<main role="main">
+
+<section id="hero" aria-hidden="true"></section>
+
+<!-- SERVICII -->
+<section id="servicii">
+
+  <div class="cards-container">
+
+    <h2>📸 Servicii Evenimente</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Pachet Basic</h3>
+        <p>Până la 100 poze</p>
+        <p>Rezoluție 2K</p>
+        <p class="price">350 lei</p>
+      </div>
+
+      <div class="card">
+        <h3>Pachet Standard</h3>
+        <p>100 - 175 poze</p>
+        <p>Rezoluție 2K</p>
+        <p class="price">450 lei</p>
+      </div>
+
+      <div class="card">
+        <h3>Pachet Premium</h3>
+        <p>Peste 175 poze</p>
+        <p>Rezoluție 4K</p>
+        <p class="price">600 lei</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cards-container">
+
+    <h2>🏛️ Servicii Photo Studio</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Studio Express</h3>
+
+        <ul>
+          <li>15 poze editate</li>
+          <li>30 minute ședință</li>
+          <li>Fundal profesional</li>
+        </ul>
+
+        <p class="price">250 lei</p>
+      </div>
+
+      <div class="card">
+        <h3>Studio Portrait</h3>
+
+        <ul>
+          <li>40 poze editate</li>
+          <li>60 minute ședință</li>
+          <li>Schimbare ținută</li>
+        </ul>
+
+        <p class="price">500 lei</p>
+      </div>
+
+      <div class="card">
+        <h3>Studio Family</h3>
+
+        <ul>
+          <li>70 poze editate</li>
+          <li>Recuzită inclusă</li>
+          <li>Ședință familie</li>
+        </ul>
+
+        <p class="price">800 lei</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DESPRE -->
+<section id="despre">
+
+  <h2>Exemple recente</h2>
+
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Sunt fotograf specializat în nunți, petreceri, zile de naștere și ședințe foto profesionale.
+  </p>
+
+  <div class="gallery">
+
+    <img
+      src="assets/img/nunta1.jpg"
+      alt="Fotografie de nuntă realizată la un eveniment">
+
+    <img
+      src="assets/img/nunta2.jpg"
+      alt="Fotografie profesională de eveniment">
+
+    <img
+      src="assets/img/petrecere1.jpg"
+      alt="Fotografie de la petrecere aniversară">
+
+  </div>
+
+</section>
+
+<!-- Multimedia integrată de: Marius Moiseev -->
+
+<section id="contact">
+
+  <h2>Locație și Prezentare</h2>
+
+  <!-- VIDEO PREZENTARE -->
+  <div class="video-box">
+
+    <video
+      controls
+      autoplay
+      muted
+      loop
+      aria-label="Video de prezentare pentru studio foto">
+
+      <source src="assets/css/img/video.mp4" type="video/mp4">
+
+    </video>
+
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- FORMULAR -->
+    <form class="contact-form">
+
+      <fieldset>
+
+        <legend>Date Personale</legend>
+
+        <div class="input-box">
+
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder=" "
+            aria-label="Introdu numele">
+
+          <label for="name">nume</label>
+
+          <span class="error-msg">
+            Introdu numele
+          </span>
+
+        </div>
+
+        <div class="input-box">
+
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder=" "
+            aria-label="Introdu adresa de email">
+
+          <label for="email">Email</label>
+
+          <span class="error-msg">
+            Email invalid
+          </span>
+
+        </div>
+
+        <div class="input-box">
+
+          <input
+            type="tel"
+            id="phone"
+            required
+            placeholder=" "
+            aria-label="Introdu numărul de telefon">
+
+          <label for="phone">Telefon</label>
+
+          <span class="error-msg">
+            Introdu telefonul
+          </span>
+
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Mesaj</legend>
+
+        <div class="input-box">
+
+          <select
+            id="subject"
+            required
+            aria-label="Selectează subiectul">
+
+            <option value="" disabled selected></option>
+            <option>Programare</option>
+            <option>Eveniment</option>
+            <option>Studio</option>
+
+          </select>
+
+          <label for="subject">Subiect</label>
+
+        </div>
+
+        <div class="input-box">
+
+          <textarea
+            id="message"
+            required
+            maxlength="200"
+            placeholder=" "
+            aria-label="Scrie mesajul">
+          </textarea>
+
+          <label for="message">Mesaj</label>
+
+          <span class="error-msg">
+            Completează mesajul
+          </span>
+
+        </div>
+
+        <p>
+          Caractere rămase:
+          <span id="charCount">200</span>
+        </p>
+
+      </fieldset>
+
+      <button
+        type="submit"
+        class="submit-btn"
+        aria-label="Trimite formularul de contact">
+
+        Trimite
+
+      </button>
+
+    </form>
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+
+      <h3>Date Contact</h3>
+
+      <p>📞 +373 68 123 456</p>
+      <p>📍 Mircea cel Bătrân 51/2</p>
+      <p>📧 mariusphoto@email.com</p>
+
+      <!-- GOOGLE MAPS -->
+      <iframe
+        src="https://maps.google.com/maps?q=chisinau&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        title="Harta locației studioului foto">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer role="contentinfo"></footer>
+
+</body>
+</html>
